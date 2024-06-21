@@ -1,0 +1,165 @@
+:root {
+    --accent1: #6d8ee8;
+    --accent2: #a594fa;
+    --accent3: #93acdf;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Mulish", Arial, Helvetica, sans-serif;
+}
+header {
+    padding-left: 100px;
+    display: flex;
+    flex-direction: row;
+}
+header h1 {
+    font-size: 2em;
+    flex: 80%;
+}
+.contactButton {
+    flex: 20%;
+    margin-right: 100px;
+    height: 50px;
+    margin-top: 16.4375px;
+    background-color: var(--accent3);
+    top: 50%;
+    border: none;
+    font-size: 1.5em;
+    border-radius: 500px;
+    cursor: pointer;
+}
+.contactButton a {
+    color: white;
+    text-decoration: none;
+}
+.contactButton:hover {
+    background-color: var(--accent1);
+    scale: 1.05;
+    transition: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+hr {
+    height: 5px;
+    background: linear-gradient(90deg, var(--accent1), var(--accent2), var(--accent3));
+    border: none;
+}
+#contentDiv {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+#heroDiv {
+    display: flex;
+}
+#heroDivText {
+    flex: 50%;
+}
+#heroDiv .contactButton {
+    width: 40%;
+}
+#heroDivExtra {
+    margin-left: 30px;
+}
+#heroDivExtra {
+    flex: 50%;
+}
+#heroDivExtra img {
+    border-radius: 25px;
+}
+#servicesDiv {
+    display: flex;
+}
+.serviceCard {
+    color: white;
+    background-color: var(--accent1);
+    border-radius: 25px;
+    flex: 50%;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+#meetDiv {
+    display: flex;
+}
+#meetDiv img{
+    width: 200px;
+    height: 250px;
+    margin-left: 10px;
+}
+#meetDiv p {
+    margin-left: 5%;
+}
+#testimonialDiv {
+    color: white;
+    background-color: var(--accent3);
+    padding-top: 2%;
+    border-radius: 25px;
+}
+#testimonialDiv h2, #testimonialDiv h4, #testimonialDiv p{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+#testimonialButtonDiv {
+    display: flex;
+    padding-bottom: 2%;
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+#testimonialButtonDiv button {
+    border: solid white;
+    background-color: var(--accent3);
+    flex: 50%;
+    border-radius: 25px;
+    cursor: pointer;
+}
+#testimonialButtonDiv img{
+    width: 50px;
+}
+#testimonialButtonDiv p{
+    font-size: small;
+}
+h1 {
+    font-size: 2.5em;
+}
+p {
+    font-size: 1.5em;
+}
+footer {
+    font-family: 'Times New Roman', Times, serif;
+}
+@media screen and (max-width: 1150px) {
+    #heroDiv {
+        flex-direction: column-reverse;
+    }
+    #heroDivExtra {
+        margin: 0px;
+    }
+    #servicesDiv {
+        flex-direction: column;
+    }
+    .serviceCard {
+        margin-top: 15px;
+    }
+    #meetDiv {
+        flex-direction: column;
+    }
+    #meetDiv p {
+        margin: 0%;
+    }
+    @media screen and (max-width: 870px) {
+        header {
+            display: block;
+            padding: 0px;
+            text-align: center;
+        }
+        #contentDiv {
+            padding: 0px;
+            text-align: center;
+        }
+    }
+}
